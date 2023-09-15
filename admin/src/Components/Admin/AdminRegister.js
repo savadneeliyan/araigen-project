@@ -12,10 +12,12 @@ function AdminRegister() {
     const [details, setDetails] = useState({
         name: "",
         password:"",
+        email:"",
     });
   const [errors, setErrors] = useState({
     name: "",
     password: "",
+    email:""
   });
 
    const togglepassword = () => {
@@ -38,6 +40,12 @@ function AdminRegister() {
       isValid = false;
     } else {
       newErrors.password = "";
+    }
+    if (details.email.trim() === "") {
+      newErrors.email = "Email is required";
+      isValid = false;
+    } else {
+      newErrors.email = "";
     }
 
     setErrors(newErrors);
@@ -69,16 +77,25 @@ function AdminRegister() {
       <SideBar/>
       <Link to="/admin">Go Back</Link>
       <div className="userregister-container">
-        <h1>register a driver</h1>
+        <h1>register a admin</h1>
         <form action="">
           <input
             onChange={handleChange}
             id="name"
+            placeholder="email"
+            type="email"
+          />
+          <div className="errorField">
+            {errors.name && <p className="error">{errors.name}</p>}
+          </div>
+          <input
+            onChange={handleChange}
+            id="email"
             placeholder="name"
             type="text"
           />
           <div className="errorField">
-            {errors.name && <p className="error">{errors.name}</p>}
+            {errors.email && <p className="error">{errors.email}</p>}
           </div>
           
           <div className="password">
