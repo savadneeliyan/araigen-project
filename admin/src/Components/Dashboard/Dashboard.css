@@ -1,0 +1,43 @@
+.dash-top{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+}
+.right{
+    background-color: yellow;
+}
+
+.left ul {
+    padding-top: 50px;
+}
+.left ul li{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.right ul li {
+    list-style-type: none;
+}
+.right ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+}
+.right ul li img{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+.head{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    margin-top:110px !important;
+    margin-bottom:30px !important;
+    text-transform: capitalize;
+}

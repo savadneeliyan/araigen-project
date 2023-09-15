@@ -1,0 +1,26 @@
+
+.pro-img img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.pro-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.pro-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-transform: capitalize;
+    /* padding-bottom: 30px; */
+    border-bottom: 1px solid #fff;
+}
+
+.right .orderForm{
+    padding: 50px 30px;
+    width: 100% !important;
+}

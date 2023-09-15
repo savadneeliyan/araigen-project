@@ -1,0 +1,124 @@
+.table{
+    min-width: 1200px;
+    max-width: 1200px;
+    margin: auto;
+}
+.tablehead h5:nth-child(1){
+    width: 100px;
+}
+.tablehead h5:nth-child(2){
+    width: 200px;
+}
+.tablehead h5:nth-child(3){
+    width: 200px;
+}
+.tablehead h5:nth-child(4){
+    width: 200px;
+}
+.tablehead h5:nth-child(5){
+    width: 200px;
+}
+.tablehead h5:nth-child(6){
+    width: 200px;
+}
+
+.table-row div:nth-child(1){
+    width: 100px;
+}
+.table-row div:nth-child(2){
+    width: 200px;
+}
+.table-row div:nth-child(3){
+    width: 200px;
+}
+.table-row div:nth-child(4){
+    width: 200px;
+}
+.table-row div:nth-child(5){
+    width: 200px;
+}
+.table-row div:nth-child(6){
+    width: 200px;
+}
+
+.tablehead h5{
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.tablehead{
+    display: flex;
+    grid-template-columns:repeat(4,1fr);
+    gap: 20px;
+    border-bottom: 1px solid #333;
+    width: fit-content;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.table-row{
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.table-row input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.orderForm button:hover{
+    color: #d11450;
+    background-color: #fff;
+}
+.orderForm button{
+    background-color: #d11450;
+    color: #fff;
+    transition: 0.5s;
+    outline: none;
+    border: 1px solid #d11450;
+    border-radius: 10px;
+}
+.table-row input[type="number"]{
+    font-size: 14px;
+    height: 30px;
+    max-width: 150px;
+}
+.createorder h2{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #3333334c;
+    width: fit-content;
+    /* margin-bottom: 20px; */
+}
+.orderForm{
+    padding: 30px 30px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: fit-content;
+    min-width: 600px;
+}
+select{
+    border: 1px solid #333;
+    padding: 10px 20px;
+    outline: 0;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+.orderSelect{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.table h3{
+    margin-bottom: 20px;
+}
+.createorder > a{
+    text-align: end;
+}
+.head-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}

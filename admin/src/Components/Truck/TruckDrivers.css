@@ -1,0 +1,140 @@
+.ordertable{
+    max-width: 80%;
+    margin: auto;
+    min-width: 1300px;
+    overflow-x: scroll;
+}
+.ordertable span{
+    font-size: 17px;
+    font-weight: 600;
+}
+.ordertableheading span{
+    text-transform: capitalize;
+    text-align: center;
+}
+.ordertableheading span:nth-child(1){
+    width: 80px;
+}
+.ordertableheading span:nth-child(2){
+    width: 150px;
+}
+.ordertableheading span:nth-child(3){
+    width: 150px;
+}
+.ordertableheading span:nth-child(4){
+    width: 120px;
+}
+.ordertableheading span:nth-child(5){
+    width: 80px;
+}
+.ordertableheading span:nth-child(6){
+    width: 120px;
+}
+.ordertableheading span:nth-child(7){
+    width: 120px;
+}
+.ordertableheading span:nth-child(8){
+    width: 120px;
+}
+.ordertableheading span:nth-child(9){
+    width: 300px;
+}
+
+.ordertablebody div li{
+    margin-bottom: 10px;
+}
+.ordertablebody div{
+    text-transform: capitalize;
+}
+.ordertablebody div:nth-child(1){
+    width: 80px;
+}
+.ordertablebody div:nth-child(2){
+    width: 150px;
+}
+.ordertablebody div:nth-child(3){
+    width: 150px;
+}
+.ordertablebody div:nth-child(4){
+    width: 120px;
+}
+.ordertablebody div:nth-child(5){
+    width: 80px;
+}
+.ordertablebody div:nth-child(6){
+    width: 120px;
+}
+.ordertablebody div:nth-child(7){
+    width: 120px;
+}
+.ordertablebody div:nth-child(8){
+    width: 120px;
+}
+.ordertablebody div:nth-child(9){
+    width: 300px;
+}
+.ordertableheading{
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #33333357;
+    /* grid-template-columns: 1fr 2fr 2fr 1fr 1fr 1fr 2fr 1fr 2fr; */
+    
+}
+.ordertableheading.admin,.ordertablebody.admin{
+    grid-template-columns: repeat(10, 1fr);
+}
+.ordertablebody div{
+    text-align: center;
+}
+.ordertablebody{
+    margin-top: 20px;
+    align-items: center;
+    gap: 20px;
+    /* grid-template-columns: repeat(9, 1fr); */
+    display: flex;
+}
+.ordertablebody > div{
+    overflow: scroll;
+}
+.nameBar{
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ordertablebody{
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.order-action .edit:hover{
+    background-color: #52b520;
+    color: #fff;
+}
+.order-action .edit{
+    border: 1px solid #52b520;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    transition: 0.5s ease;
+}
+.order-action .delete:hover{
+    background-color: #d72323;
+    color: #fff;
+}
+.order-action .delete{
+    cursor: pointer;
+    border: 1px solid #d72323;
+    color: #d72323;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    transition: 0.5s ease;
+}
+.order-action{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

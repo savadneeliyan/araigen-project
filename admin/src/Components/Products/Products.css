@@ -1,0 +1,9 @@
+.right form{
+    text-align: left;
+}
+.singlehead{
+    flex-direction: column;
+    text-align: left;
+    border-bottom: 0;
+    margin-bottom: 0 !important;
+}

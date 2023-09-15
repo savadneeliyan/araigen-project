@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  padding: 0;
+  margin: 0; 
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+::placeholder {
+  font-weight: 500;
+}
+.errorField {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  color: red;
+}
+.error{
+  color: red;
+}
+[type = submit]{
+  background-color: #d11450;
+  border-radius: 5px;
+  font-size: 22px;
+  color: #fff;
+  border: 0;
+  width: 100%;
+}
+a{
+  color: #52b520;
+  text-decoration: none;
+}
+a:hover{
+  color: #d11450;
+}
+.logo{
+  height: 150px;
+  margin: auto;
+}
+
+li{
+  list-style-type: none ;
+}
+
+input{
+  height: 60px;
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 28px;
+  padding-left: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #414040;
+}
+form{
+  width: 100%;
+  margin: auto;
+}
+button{
+  padding: 10px 20px;
+}
+.no-img{
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+#root{
+  max-width: 1200px ;
+  margin: auto;
+}
+.new svg{
+  transition: 0.5s;
+  fill: #52b520;
+}
+.new:hover svg{
+  fill: #fff;
+}
+.new:hover{
+  background-color: #52b520;
+  color: #fff;
+}
+.new{
+  border:1px solid #52b520;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  width: fit-content;
+  transition: 0.5s;
+}
+.new-order{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cancelOrder:hover{
+  color: #52b520;
+}
+.cancelOrder{
+  color: #d11450;
+  transition: 0.5s;
+}
+
+/* admmin */
+
+.right{
+  margin-top: 50px;
+}
+
+.left{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.left ul{
+  display: flex;
+  gap: 30px;
+}
+
+/* products */
+
+.head {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  /* justify-content: space-between; */
+  /* max-width: 80%; */
+  /* margin: auto; */
+  /* margin-top: 110px !important; */
+  margin-bottom: 30px !important;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.head li {
+  text-align: center;
+}
+
+.head li:nth-child(1) {
+  width: 200px;
+}
+
+.head li:nth-child(2) {
+  width: 50px;
+}
+
+.head li:nth-child(3) {
+  width: 200px;
+}
+
+.head li:nth-child(4) {
+  width: 200px;
+}
+
+.head li:nth-child(5) {
+  width: 100px;
+}
+
+.head li:nth-child(6) {
+  width: 200px;
+}
+.items{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.items>div img{
+  width: 100%;
+  object-fit: cover;
+}
+.items>div {
+  text-align: center;
+}
+
+.items>div:nth-child(1) {
+  width: 200px;
+}
+
+.items>div:nth-child(2) {
+  width: 50px;
+}
+
+.items>div:nth-child(3) {
+  width: 200px;
+}
+
+.items>div:nth-child(4) {
+  width: 200px;
+}
+
+.items>div:nth-child(5) {
+  width: 100px;
+}
+
+.items>div:nth-child(6) {
+  width: 200px;
+}
+
+
+/* driverpage */
+
+.driverpage.vendor .head li:nth-child(5),.driverpage.vendor .items>div:nth-child(5){
+  width: 200px;
+}
+.driverpage .product{
+  width: fit-content;
+  margin: auto;
+}
+.driverpage .items{
+  padding: 20px 0;
+}
+
+/* order  */
+.adminorder .ordertableheading span:nth-child(9) {
+  width: 100px;
+}
+.adminorder .ordertableheading span:nth-child(10) {
+  width: 300px;
+}
+.adminorder .ordertablebody div:nth-child(9){
+  width: 100px;
+}
+.adminorder .ordertablebody div:nth-child(10){
+  width: 300px;
+}
+
+/* error */
+
+.errorpage {
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.errorpage .logo{
+  margin: 0;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
